@@ -1,132 +1,142 @@
 <!DOCTYPE html>
 <html>
-
-
 <head>
-<title>Personal webpage</title>
-</head>
-
+    <meta charset="utf-8">
+    <title>HTML Div Float</title>
     <style>
-    a.one:link {color:rgb(7,31,78);text-decoration:none;} <!-- estilo do hiperlink -->
-    a.one:visited {color:rgb(7,31,78);text-decoration:none;}
-    a.one:hover {background:rgb(230,230,230);text-decoration:none;}
-
-    table, p.a {
-        color: rgb(65,65,65);
-        font-size: 13px;
-        font-family: sans-serif;
-}
-p.big {
-  line-height: 5;
-}
-
+        div.container{
+            width: 980px;
+            height: auto;
+            margin-top: 40px;
+            margin-right: 185px;
+            margin-left: 185px;
+            color: #414141;
+            font-family: sans-serif;
+            font-size: 13px;    
+        }
+        div{
+            height: auto;
+        }
+        .topo{
+            width: 980px;
+            background-color: #e8e6e6;
+            float: left;
+            text-align: center;
+        }
+        .esquerda{
+            width: 300px;
+            float: left;
+            text-align: right;
+            font-weight: bold;
+        }
+        .direita{
+            width: 650px;
+            float: right;
+            text-align: left;
+        }
+        a:link {        /* unvisited link */
+            color: #0e3e9b;
+            background:#fff;
+            text-decoration:none;
+        }
+        a:visited {     /* visited link */
+            color: #0e3e9b;
+            background:#fff;
+            text-decoration:none;
+        }
+        a:hover {       /* hover */
+            color: #0000ff;
+            background:#fff;
+            text-decoration:none;
+        }
+        a:active {      /* selected link */
+            color: #0e3e9b;
+            background:#fff;
+            text-decoration:none;
+        } 
     </style>
-<body bgcolor="#979797">
 
-<!-- <tr> define a linha. <th> define o cabeçalho da tabela. <td> define uma célula; (default: bold and centered)
-The <td> elements are the data containers of the table. They can contain all sorts of HTML elements; text, images, lists, other tables, etc. -->
-
-<p class="big"></p>
-<table style="width:70%; margin-left:auto;margin-right:auto; background-color:rgb(7,31,78)">
-  <col width="27%">
-  <col width="3%">
-  <col width="70%">
-  <tr>
-    <td align="right"; td valign="top"></td>
-    <td></td>
-    <td align="right";td valign="top"; style="color:white">PERSONAL WEBSITE</td>
-  </tr>
-  <tr>
-</table>
-
-<table style="width:70%; margin-left:auto;margin-right:auto;background-color:rgb(230,230,230)">
-  <col width="27%">
-  <col width="3%">
-  <col width="70%">
-    <th align="right"; td valign="top">IMAGE</th>
-    <th></th>
-    <td align="left";td valign="top">Patrick Thomaz de A. Martins<p>
-                                    <br>Universidade Estadual de Goiás, <i>Campus</i> Nordeste - Sede
-                                    <br>Av. Universitária, esq. R. Nagib Simão, s/n, Setor Nordeste
-                                    <br>CEP: 73.807-250, Formosa-GO</p>
-  </tr>
-</table>
-
-<table style="width:70%; margin-left:auto;margin-right:auto; background-color:#ffffff">
-  <col width="27%"> <!-- largura (espaço ocupado) da primeira coluna (2ª e 3ª, respectivamente) -->
-  <col width="3%">
-  <col width="70%">
-  <tr>
-    <td align="right"; td valign="top">POSITION</td>
-    <td></td>
-    <td align="left";td valign="top">Professor (Full)
-  </tr>
-  <tr></tr></td>
-  <tr>
-    <td align="right";td valign="top">EDUCATION</td>
-    <td></td>
-    <td align="left";td valign="top">PhD, Geosciences and Environment, Universidade Estadual Paulista - UNESP, 2012
+</head>
+<body>
+    <div class="container">
+        <div class="topo">Universidade Estadual de Goiás, Câmpus Nordeste - Sede
+        <br>Av. Universitária, esq. R. Nagib Simão, s/n, Setor Nordeste
+        <br>CEP: 73.807-250, Formosa-GO</div>
+        <div style="clear: both;"></div>
+    </div>
+    <div class="container">
+        <div class="esquerda">EDUCATION</div>
+        <div class="direita">PhD, Geosciences and Environment, Universidade Estadual Paulista - UNESP, 2012
                 <br>MSc, Geography, Universidade Federal de Sergipe - UFS, 2008
+                <br>PGDip, Modeling in Earth and Environmental Sciences, Universidade Estadual de Feira de Santana
                 <br>Licensure (Teaching Major), Geography, Universidade Estadual de Santa Cruz - UESC, 2004</td>
   </tr>
-  <tr>
-    <td align="right";td valign="top">BIOGRAPHY</td>
-    <td></td>
-    <td align="left";td valign="top">Text   </td>
-  </tr>
-  <tr>
-    <td align="right";td valign="top">SOCIAL</td>
-    <td></td>
-    <td align="left";td valign="top">Lastname</td>
-  </tr>
-  <tr>
-    <td align="right";td valign="top">COURSES​</td>
-    <td></td>
-    <td align="left";td valign="top">Undergraduation
-            <br><a class="one" href="http://www.geografia.formosa.ueg.br/">Geografia</a> (<i>Campus</i> Nordeste - Sede)
-            <br>Graduation
-            <br><a class="one" href="http://www.ppgas.ueg.br/">Ambiente e Sociedade - PPGAS</a> (<i>Campus</i> Sudeste - Sede) 
-            <br><a class="one" href="http://www.ppgeo.ueg.br/">Geografia</a> (<i>Campus</i> Cora Coralina - Sede)
-            <br><a class="one" href="http://www.renac.ueg.br/">Recursos Naturais do Cerrado - RENAC</a> (<i>Campus</i> Central - Sede)<p class="big"></p>
-    </td>
-  </tr>
-  <tr>
-    <td align="right";td valign="top">RESEARCH GROUPS</td>
-    <td></td>
-    <td align="left";td valign="top"><a class="one" href="http://www.geotec.ueg.br/">Geotecnologias aplicadas à análise espacial</a> (Geomatics applied to spatial analysis)
-        <br><a class="one" href="http://dgp.cnpq.br/dgp/espelhogrupo/2624955184283948">Geografia e análise ambiental</a> (Geography and environmental analysis)</td>
-  </tr>
-  <tr>
-    <td align="right";td valign="top">RESEARCH THEMES<br>Research interests</td>
-    <td></td>
-    <td align="left";td valign="top">Land use and land cover
-                <br>Landscape ecology
-                <br>Geospatial technology applied to environmental analysis
-                <br>Land use conflicts in protected areas</td> 
-  </tr>
-  <tr>
-    <td align="right";td valign="top">SUPERVISION</td>
-    <td></td>
-    <td align="left";td valign="top">Lastname</td>
-  </tr>
-  <tr>
-    <td align="right";td valign="top">ONGOING PROJECT</td>
-    <td></td>
-    <td align="justify";td valign="top">Caracterization of fire ocorrency in Conservation Unity of Cerrado​
-        <p>O fogo tem sido importante para a vida na Terra, contribuindo tanto para a evolução de algumas espécies quanto para o desenvolvimento tecnológico da humanidade. O bioma de savana tropical tem sido apontado como espaço geográfico onde ocorre a maior parte das atividades de incêndio do nosso planeta. Na savana brasileira, onde a origem mais comum do incêndio é antrópica, é comum incêndios atingirem Unidades de Conservação. Visando contribuir ao planejamento de medidas preventivas e ao manejo do fogo em Unidades de Conservação do Cerrado, o presente projeto tem como objetivo monitorar remotamente as ocorrências de incêndio em Unidades de Conservação do Cerrado, utilizando em sua base metodológica o uso de tecnologias geoespaciais.<p>
-        <p>​Funding: Bolsa de Pós-Graduação Stricto Sensu - Nível Mestrado - UEG - Bolsa
+</div>
+        <div style="clear: both;"></div>
+    </div>
+    <div class="container">
+        <div class="esquerda">BIOGRAPHY</div>
+        <div class="direita"><i>Text</i></div>
+        <div style="clear: both;"></div>
+    </div>
+    <div class="container">
+        <div class="esquerda">SOCIAL</div>
+        <div class="direita"><i>Text</i></div>
+        <div style="clear: both;"></div>
+    </div>
+    <div class="container">
+        <div class="esquerda">COURSES​</div>
+        <div class="direita">GRADUATION
+            <br><a href="http://www.geografia.formosa.ueg.br/">Geografia</a> (<i>Campus</i> Nordeste - Sede Formosa)
+            <p>GRADUATION
+            <br><a href="http://www.ppgas.ueg.br/">Ambiente e Sociedade - PPGAS</a> (<i>Campus</i> Sudeste - Sede Morrinhos)
+            <br><a href="http://www.ppgeo.ueg.br/">Geografia</a> (<i>Campus</i> Cora Coralina - Sede Goiás)
+            <br><a href="http://www.renac.ueg.br/">Recursos Naturais do Cerrado - RENAC</a> (<i>Campus</i> Central - Sede Anápolis)<p></p></div>
+        <div style="clear: both;"></div>
+    </div>
+    <div class="container">
+        <div class="esquerda">RESEARCH GROUPS</div>
+        <div class="direita"><a href="http://www.geotec.ueg.br/">Geotecnologias aplicadas à análise espacial</a> (Geomatics applied to spatial analysis)
+        <br><a href="http://dgp.cnpq.br/dgp/espelhogrupo/2624955184283948">Geografia e análise ambiental</a> (Geography and environmental analysis)</div>
+        <div style="clear: both;"></div>
+    </div>
+    <div class="container">
+        <div class="esquerda">RESEARCH INTERESTS</div>
+        <div class="direita">Land use and land cover
+        <br>Landscape ecology
+        <br>Geospatial technology applied to environmental analysis
+        <br>Land use conflicts in protected areas</div>
+        <div style="clear: both;"></div>
+    </div>
+    <div class="container">
+        <div class="esquerda">SUPERVISION</div>
+        <div class="direita">CURRENT GRADUATE STUDENTS
+        <br>Lívia Lima Leite Aguiar (M.Sc in Natural Resources of the Cerrado)
+        <br>Ana Carolina Almeida Borges (M.Sc in Environment and Society)
+        <br>Helena Novak Manrique (M.Sc in Environment and Society)
+        <p>CURRENT UNDERGRADUATE STUDENTS
+        <br>Rayne Aparecida Barbosa - Undergrad Student</p></div>
+        <div style="clear: both;"></div>
+    </div>
+​    <div class="container">
+        <div class="esquerda">ONGOING PROJECT</div>
+        <div class="direita">Caracterization of fire ocorrency in Conservation Unity of Cerrado​
+        <p align="justify">O fogo tem sido importante para a vida na Terra, contribuindo tanto para a evolução de algumas espécies quanto para o desenvolvimento tecnológico da humanidade. O bioma de savana tropical tem sido apontado como espaço geográfico onde ocorre a maior parte das atividades de incêndio do nosso planeta. Na savana brasileira, onde a origem mais comum do incêndio é antrópica, é comum incêndios atingirem Unidades de Conservação. Visando contribuir ao planejamento de medidas preventivas e ao manejo do fogo em Unidades de Conservação do Cerrado, o presente projeto tem como objetivo monitorar remotamente as ocorrências de incêndio em Unidades de Conservação do Cerrado, utilizando em sua base metodológica o uso de tecnologias geoespaciais.</p>
+        <p>Funding: Bolsa de Pós-Graduação Stricto Sensu - Nível Mestrado - UEG - Bolsa
         <br>Programa de Bolsas de Iniciação Científica da UEG - Bolsa
-        <br>Conselho Nacional de Desenvolvimento Científico e Tecnológico - Bolsa.</p>
-  </tr>
-  <tr>
-    <td align="right";td valign="top">SELECTED PUBLICATIONS </td>
-    <td></td>
-    <td align="left";td valign="top">Lastname</td> 
-  </tr>
-</table>
-
-
+        <br>Conselho Nacional de Desenvolvimento Científico e Tecnológico - Bolsa.</p></div>
+        <div style="clear: both;"></div>
+    </div>
+    <div class="container">
+        <div class="esquerda">SELECTED PUBLICATIONS</div>
+        <div class="direita">BARBOSA, H. O.; BORGES, P. P.; DALA-CORTE, R. B.; MARTINS, P. T. A.; TERESA, F. B. Relative importance of local and landscape variables on fish assemblages in streams of Brazilian savanna. Fisheries Management and Ecology, v. 26, p. 119-130, 2019. <a href=http://dx.doi.org/10.1111/fme.12331>http://dx.doi.org/10.1111/fme.12331</a>.</p>
+        <p>​MARTINS, P. T. A.; RIEDEL, P. S. ; MILANELLI, J. C. C. Sensitivity mapping of oil pollution incidents in land environments. Acta Scientiarum. Technology (online), v. 40, e30219, 2018. <a href="http://dx.doi.org/10.4025/actascitechnol.v40i1.30219">http://dx.doi.org/10.4025/actascitechnol.v40i1.30219</a>.</p>
+        <p>MARTINS, P. T. A.; WANDERLEY, L. L. Dinâmica de ocupação espacial de áreas contíguas (período 1987-2008) e sua relação com tensores de origem antrópica no manguezal do Rio Cachoeira, Ilhéus, Bahia. Sociedade & natureza (UFU. Online), v. 21, p. 77-89, 2009. <a href="http://dx.doi.org/10.1590/S1982-45132009000200006">http://dx.doi.org/10.1590/S1982-45132009000200006</a>.</p></div>
+        <div style="clear: both;"></div>
+    </div>
+    <div class="container">
+        <div align="right">Last updated on March 1st, 2020</div>
+        <div style="clear: both;"></div>
+    </div>
 </body>
-
-
 </html>
