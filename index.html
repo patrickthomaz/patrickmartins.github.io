@@ -4,24 +4,45 @@
     <meta charset="utf-8">
     <title>HTML Div Float</title>
     <style>
-        div.container{
+        body {
+            background-color: #fff;
+        }
+        .container{
             width: 980px;
             height: auto;
             margin-top: 40px;
             margin-right: 185px;
             margin-left: 185px;
             color: #414141;
+            background-color: #fff;
             font-family: sans-serif;
             font-size: 13px;    
         }
         div{
             height: auto;
+            background-color: #fff;
         }
-        .topo{
+        .containertopo{
             width: 980px;
+            height: auto;
+            margin-right: 185px;
+            margin-left: 185px;
+            color: #414141;
+            background-color: #e8e6e6;
+            font-family: sans-serif;
+            font-size: 13px;
+        }
+        .topoesquerda{
+            width: 300px;
             background-color: #e8e6e6;
             float: left;
-            text-align: center;
+            text-align: right;
+        }
+        .topodireita{
+            width: 650px;
+            background-color: #e8e6e6;
+            float: right;
+            text-align: left;
         }
         .esquerda{
             width: 300px;
@@ -34,6 +55,52 @@
             float: right;
             text-align: left;
         }
+        .img {  /* imagem */
+            float: left;
+        }
+        .clearfix {
+            overflow: auto;
+        }      /* imagem */
+        /*
+        .container {
+            width: 650px;
+            height: auto;
+            margin-top: 40px;
+            margin-right: 185px;
+            margin-left: 185px;
+            position: relative;
+        }
+        .image {
+            display: block;
+            width: 300px;
+            height: auto;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: auto;
+            width: 300px;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: #008CBA;
+        }
+        .container:hover .overlay {
+            opacity: 0.9;
+        }
+        .text {
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }*/
         a:link {        /* unvisited link */
             color: #0e3e9b;
             text-decoration:none;
@@ -50,26 +117,37 @@
             color: #0e3e9b;
             text-decoration:none;
         } 
+        * {box-sizing: border-box}  /* barra de progresso começa aqui */
+        .containerprogresso {
+            width: 100%;
+            background-color: #ddd;
+        }
+        .skills {
+            text-align: right;
+            color: #414141;
+        }
+        .progresso {width: 80%; background-color: #e8e6e6;}  /* barra de progresso termina aqui */
+        }        
     </style>
 
 </head>
 <body>
-    <div class="container">
-        <div class="topo">Universidade Estadual de Goiás, Câmpus Nordeste - Sede
+    <div class="containertopo">
+        <div class="topodireita">
+        <br>Universidade Estadual de Goiás, Câmpus Nordeste - Sede
         <br>Av. Universitária, esq. R. Nagib Simão, s/n, Setor Nordeste
         <br>CEP: 73.807-250, Formosa-GO
-        <br><a href="mailto:patrick.martins@ueg.br">patrick.martins@ueg.br</a></div>
+        <br><a href="malito:patrick.martins@ueg.br">patrick.martins@ueg.br</a></div>
         <div style="clear: both;"></div>
     </div>
     <div class="container">
         <div class="esquerda">EDUCATION</div>
         <div class="direita">PhD, Geosciences and Environment, Universidade Estadual Paulista - UNESP, 2012
-                <br>MSc, Geography, Universidade Federal de Sergipe - UFS, 2008
-                <br>PGDip, Modeling in Earth and Environmental Sciences, Universidade Estadual de Feira de Santana - UEFS, 2008
-                <br><a href="https://en.wikipedia.org/wiki/Licentiate_(degree)" target="_blank">Licentiate</a> in Geography, Universidade Estadual de Santa Cruz - UESC, 2004</div>
-    </div>
+            <br>MSc, Geography, Universidade Federal de Sergipe - UFS, 2008
+            <br>PGDip, Modeling in Earth and Environmental Sciences, Universidade Estadual de Feira de Santana - UEFS, 2008
+            <br><a href="https://en.wikipedia.org/wiki/Licentiate_(degree)" target="_blank">Licentiate</a> in Geography, Universidade Estadual de Santa Cruz - UESC, 2004</div></div>
         <div style="clear: both;"></div>
-    </div>
+        </div>
     <div class="container">
         <div class="esquerda">BIOGRAPHY</div>
         <div class="direita"><i>Text</i></div>
@@ -125,11 +203,16 @@
         <div class="esquerda">ONGOING PROJECT</div>
         <div class="direita">Caracterization of fire ocorrency in Conservation Unity of Cerrado​
         <br>
-        <br align="justify">O fogo tem sido importante para a vida na Terra, contribuindo tanto para a evolução de algumas espécies quanto para o desenvolvimento tecnológico da humanidade. O bioma de savana tropical tem sido apontado como espaço geográfico onde ocorre a maior parte das atividades de incêndio do nosso planeta. Na savana brasileira, onde a origem mais comum do incêndio é antrópica, é comum incêndios atingirem Unidades de Conservação. Visando contribuir ao planejamento de medidas preventivas e ao manejo do fogo em Unidades de Conservação do Cerrado, o presente projeto tem como objetivo monitorar remotamente as ocorrências de incêndio em Unidades de Conservação do Cerrado, utilizando em sua base metodológica o uso de tecnologias geoespaciais.
+        <br>
+        <div class="containerprogresso"></div>
+          <div class="skills progresso">80%</div>
+        <br>
+        <div class="clearfix" align="justify">
+        <img class="img" src="imgteste.jpg" alt="Pineapple" width="170" height="200" hspace="10">O fogo tem sido importante para a vida na Terra, contribuindo tanto para a evolução de algumas espécies quanto para o desenvolvimento tecnológico da humanidade. O bioma de savana tropical tem sido apontado como espaço geográfico onde ocorre a maior parte das atividades de incêndio do nosso planeta. Na savana brasileira, onde a origem mais comum do incêndio é antrópica, é comum incêndios atingirem Unidades de Conservação. Visando contribuir ao planejamento de medidas preventivas e ao manejo do fogo em Unidades de Conservação do Cerrado, o presente projeto tem como objetivo monitorar remotamente as ocorrências de incêndio em Unidades de Conservação do Cerrado, utilizando em sua base metodológica o uso de tecnologias geoespaciais.
         <br>
         <br>Funding: Bolsa de Pós-Graduação Stricto Sensu - Nível Mestrado - UEG - Partial scholarship
         <br text-indent="660px";>Programa de Bolsas de Iniciação Científica da UEG - Scholarship
-        <br>Conselho Nacional de Desenvolvimento Científico e Tecnológico - CNPq - Scholarship</div>
+        <br>Conselho Nacional de Desenvolvimento Científico e Tecnológico - CNPq - Scholarship</div></div></div>
         <div style="clear: both;"></div>
     </div>
     <div class="container">
@@ -145,5 +228,6 @@
         <div align="right">Last updated on March 1st, 2020.</div>
         <div style="clear: both;"></div>
     </div>
+
 </body>
 </html>
